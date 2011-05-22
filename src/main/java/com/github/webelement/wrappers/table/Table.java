@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 
 
 /**
- * API for working with HTML table.
+ * API for working with HTML <i>table</i> element.
  *
  * @author Sergey Filin
  * @author Mairbek Khadikov

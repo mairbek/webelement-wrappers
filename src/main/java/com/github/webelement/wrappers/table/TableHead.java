@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 /**
- * API for working with HTML thead.
+ * API for working with HTML <i>thead</i> element.
  *
  * @author Mairbek Khadikov
  */

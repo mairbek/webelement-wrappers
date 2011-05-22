@@ -1,12 +1,16 @@
 package com.github.webelement.wrappers.table;
 
-import com.github.webelement.wrappers.ElementWrapper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
+import com.github.webelement.wrappers.ElementWrapper;
 
+/**
+ * API for working with HTML <i>tr</i> element.
+ *
+ * @author Mairbek Khadikov
+ */
 public class TableRow extends ElementWrapper {
     private static final By FIND_CELLS = By.xpath(TableCell.TAG_NAME);
     public static final String TAG_NAME = "tr";
@@ -25,14 +29,6 @@ public class TableRow extends ElementWrapper {
 
     public String getText() {
         return element().getText();
-    }
-
-    public WebElement expansionToggle() {
-        return element().findElement(By.className("o_treetable_folding"));
-    }
-
-    public List<WebElement> expansionToggles() {
-        return element().findElements(By.className("o_treetable_folding"));
     }
 
 }

@@ -31,6 +31,7 @@ public class TableRowContainer extends ElementWrapper {
 
     public List<TableRow> rows() {
         return Lists.transform(element().findElements(FIND_ROWS), new Function<WebElement, TableRow>() {
+        	@Override
             public TableRow apply(WebElement webElement) {
                 return new TableRow(driver(), element());
             }

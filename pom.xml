@@ -8,11 +8,23 @@
     <artifactId>webelement-wrappers</artifactId>
     <version>0.1-SNAPSHOT</version>
 
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+		</plugins>
+	</build>
+		
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium</artifactId>
-            <version>2.0b1</version>
+            <artifactId>selenium-api</artifactId>
+            <version>2.0b3</version>
         </dependency>
     </dependencies>
     
